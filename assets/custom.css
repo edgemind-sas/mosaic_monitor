@@ -1,0 +1,170 @@
+/*********************************************
+ * Variables
+ *********************************************/
+
+:root {
+  --primary-color: #1f416d;
+  --secondary-color: #ef7b26;
+  --tertiary-color: #bf8740;
+  --quaternary-color:  #4c000a;
+  --quinary-color:  #a10010;
+
+  --block-code-bg-color:  #343131;
+  --block-code-text-color:  #CCCCCC;
+  
+  --primary-text-color: black;
+  --main-slide-text-color: black;
+
+  --bg-primary-fg-text-color: #c9d4e6;
+}
+
+
+/*********************************************
+ * General settings
+ *********************************************/
+body {
+    font-family: "Helvetica";
+    font-size: 8pt;
+    color: #393939;
+    background-color: #ffffff; }
+
+#content {
+  max-width: 1200px;
+  background-color: #ffffff;
+}
+
+p {
+  margin: 10px 0 0 0;
+}
+
+/*********************************************
+ * Title slide
+ *********************************************/
+
+h1 {
+  color: var(--primary-color);
+  font-size: 500%;
+  font-weight: bold;
+  /*font-size: 300%;*/
+  }
+
+
+/*********************************************
+ * Table of contents
+ *********************************************/
+
+#table-of-contents h2 {
+  Background-color: var(--primary-color);
+  color: ;
+  }
+
+/*********************************************
+ * Headers
+ *********************************************/
+
+h2 {
+    color: var(--primary-color);
+    font-size: 200%;
+    font-weight: bold;
+    /* margin: 40px 0 10px 0; */
+}
+
+h3 {
+  color: var(--secondary-color);
+  font-size: 180%;
+  font-weight: bold;
+  /* margin: 20px 0 10px 0; */
+}
+
+
+h4 {
+  color: var(--quaternary-color);
+  font-size: 100%;
+  font-weight: normal;
+  margin: 10px 0 10px 0;
+}
+
+
+/*********************************************
+ * Lists
+ *********************************************/
+
+dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+dt {
+  color: var(--quaternary-color);
+    /* adjust the width; make sure the total of both is 100% */
+  padding: 0;
+  display: block;
+}
+dd {
+  margin-left: 15px;
+  /* adjust the width; make sure the total of both is 100% */
+  padding: 0;
+  display: inline;
+}
+
+
+/*********************************************
+ * Table
+ *********************************************/
+table {
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+th {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+td {
+  background-color: #c9d4e6;
+}
+
+th {
+  font-size: 100%;
+  text-align: left;
+}
+
+caption {
+  font-style: normal;
+  text-align: center;
+  margin: 0px;
+  padding: 5px;
+}
+
+.invisible caption {
+  padding: 0px 0px 5px 0px;
+}
+
+.t-bottom {
+  font-style: normal;
+}
+
+.table-number {
+  font-weight: bold;
+}
+        
+
+/*********************************************
+ * LINKS
+ *********************************************/
+a {
+  color: var(--tertiary-color);
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease; }
+
+a:hover {
+  color: var(--quinary-color);
+  text-shadow: none;
+  border: none; }
+
+
