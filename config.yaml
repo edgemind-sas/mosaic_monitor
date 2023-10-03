@@ -1,0 +1,8 @@
+db:
+  cls: DBMongo
+  name: "mosaic_trading"
+  config:
+    host: "mongodb://localhost"
+    port: "27017"
+    username: "root"
+    password: "example"

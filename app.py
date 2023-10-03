@@ -134,25 +134,18 @@ console_handler.setFormatter(formatter)
 file_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
-
-
+    
+# Application data
 APP_DATA = dict(
-    db=mdb.DBMongo(
-        name="mosaic_trading",
-        config={
-            "host": "mongodb://localhost",
-            "port": "27017",
-            "username": "root",
-            "password": "example",
-        }
-    ),
+    db=moc.ObjMOSAIC.from_dict(app_config["db"]),
     money_fmt=ddtf.Format(),
     pct1_fmt=ddtf.Format(precision=1, scheme=ddtf.Scheme.percentage_rounded),
     pct2_fmt=ddtf.Format(precision=2, scheme=ddtf.Scheme.percentage_rounded),
     pct4_fmt=ddtf.Format(precision=4, scheme=ddtf.Scheme.percentage_rounded),
     perf_fmt=ddtf.Format(precision=4, scheme=ddtf.Scheme.fixed),
 )
-    
+
+# Try to connect the APP with bots DB
 APP_DATA["db"].connect()
 
 # initialize app
