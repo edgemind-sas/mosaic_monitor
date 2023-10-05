@@ -446,13 +446,25 @@ bots_dash = html.Div([
 
 APP_STORES = {}
 store_name = "bots"
-APP_STORES[store_name] = dcc.Store(id=store_name)
+APP_STORES[store_name] = dcc.Store(
+    id=store_name,
+    data={},
+)
 store_name = "bots_selected"
-APP_STORES[store_name] = dcc.Store(id=store_name)
+APP_STORES[store_name] = dcc.Store(
+    id=store_name,
+    data={},
+)
 store_name = "bots_perf_selected"
-APP_STORES[store_name] = dcc.Store(id=store_name)
+APP_STORES[store_name] = dcc.Store(
+    id=store_name,
+    data={},
+)
 store_name = "orders_selected"
-APP_STORES[store_name] = dcc.Store(id=store_name)
+APP_STORES[store_name] = dcc.Store(
+    id=store_name,
+    data={},
+)
 
 app.layout = html.Div(
     list(APP_STORES.values()) +
